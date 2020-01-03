@@ -1,0 +1,30 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+#bg{
+	width: 100vw;
+	height: 100vh;
+	background: url(../img/12056.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.bubbles{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.bubble{
+	width: 10px;
+	height: 10px;
+	border: 1px solid #eee;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -10%;
+	animation: up 8s ease-in-out;
+}
+@keyframes up{
+	from{bottom: -10%;opacity: 1;}
+	to{bottom: 110%;opacity: 0.5;}
+}
